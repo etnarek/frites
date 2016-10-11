@@ -10,5 +10,5 @@ base:
       - htop
       - python
       - python3
-      - vim
+      - vim-enhanced
       - nano
