@@ -17,8 +17,7 @@ nginx:
 
 /etc/nginx/sites-available/default:
   file.managed:
-    - source: salt://nginx/files/default.jinja
-    - template: jinja
+    - source: salt://nginx/files/default
     - user: root
     - group: root
     - mode: 640
