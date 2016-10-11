@@ -13,6 +13,7 @@ nginx:
     - user: root
     - group: root
     - mode: 640
+    - makedirs: True
 
 /etc/nginx/sites-available/default:
   file.managed:
@@ -21,9 +22,11 @@ nginx:
     - user: root
     - group: root
     - mode: 640
+    - makedirs: True
 
 /etc/nginx/sites-enabled/default:
   file.symlink:
+    - makedirs: True
     - target: /etc/nginx/sites-available/default
     - require:
       - file: /etc/nginx/sites-available/default
@@ -35,3 +38,4 @@ nginx:
     - user: root
     - group: root
     - mode: 644
+    - makedirs: True
