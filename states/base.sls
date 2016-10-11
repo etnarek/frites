@@ -5,9 +5,10 @@ base:
       - tmux
       - screen
       - zsh
-      - man
       - curl
       - wget
       - htop
       - python
       - python3
+      - vim
+      - nano
