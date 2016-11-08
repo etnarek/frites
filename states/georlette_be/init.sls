@@ -1,3 +1,6 @@
+require:
+    - sls: nginx
+
 /etc/nginx/sites-available/georlette.be:
   file.managed:
     - source: salt://georlette_be/vhost.conf
