@@ -1,6 +1,6 @@
 /etc/nginx/sites-available/georlette.be:
   file.managed:
-    - source: salt://georlette.be/vhost.conf
+    - source: salt://georlette_be/vhost.conf
     - user: root
     - group: root
     - mode: 640
@@ -15,7 +15,7 @@
 
 /usr/share/nginx/georlette.be/index.html:
   file.managed:
-    - source: salt://georlette.be/index.html
+    - source: salt://georlette_be/index.html
     - user: root
     - group: root
     - mode: 644
@@ -23,7 +23,7 @@
 
 /usr/share/nginx/georlette.be/marmite.jpg:
   file.managed:
-    - source: salt://georlette.be/marmite.jpg
+    - source: salt://georlette_be/marmite.jpg
     - user: root
     - group: root
     - mode: 644
