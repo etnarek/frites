@@ -1,3 +1,8 @@
+include:
+    - nginx
+
+require:
+    - sls: nginx
 
 /etc/nginx/sites-available/georlette.be:
   file.managed:
