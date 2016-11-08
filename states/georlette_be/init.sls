@@ -1,5 +1,5 @@
 require:
-    - sls: nginx
+    - sls: nginx.sls
 
 /etc/nginx/sites-available/georlette.be:
   file.managed:
